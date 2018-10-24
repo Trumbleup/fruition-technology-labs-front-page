@@ -1,0 +1,168 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*Header*/
+
+#header {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-bottom: solid 1px grey;
+}
+
+.container {
+	margin: 150px;
+}
+
+#header-photo {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    width: 400px;
+    height: 400px;
+}
+
+#phrase-container {
+	border-bottom: solid black 1px;
+}
+
+#fruition-logo {
+	height: 175px;
+	width: 235px;
+}
+
+/*Main Container*/
+
+#main {
+	background-color: #FFFCFC;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+}
+
+#main h1 {
+	color: grey;
+}
+
+/*The 5 Steps to Fruition Row*/
+
+#steps-container {
+	display: flex;
+	flex-direction: row;
+}
+
+/*Cogs Shape by David Dietle https://codepen.io/ddietle/pen/bZPkKW*/
+
+.spoke {
+  background-color: grey;
+  position: absolute;
+  height: 175px;
+  width:30px;
+  margin-left: -15px;
+  margin-top: -12.5px;
+  left: 50%;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.spoke + .spoke {
+  transform: rotateZ(45deg);
+}
+
+.spoke + .spoke + .spoke {
+  transform: rotateZ(-45deg);
+}
+
+.spoke + .spoke + .spoke + .spoke {
+  transform: rotateZ(90deg);
+}
+
+.cog {
+  position:relative;
+  background-color: grey;
+  margin: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.step {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  z-index: 3000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#unlock {
+  background-color: yellow;
+}
+
+#explore {
+  background-color: teal;
+}
+
+#plan {
+  background-color: green;
+}
+
+#build {
+  background-color: pink;
+}
+
+#launch {
+  background-color: white;
+}
+
+.step p {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*Center Page*/
+
+#business-container {
+	margin: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.panel {
+	margin: 20px;
+	height: 500px;
+	width: 400px;
+	border:solid black 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#startup {
+	background-color: #42B9DA;
+}
+
+#mission {
+	background-color: #0E272F;
+	color: white;
+}
+
+#transform {
+	background-color: #42B9DA;
+}
